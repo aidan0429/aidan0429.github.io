@@ -24,7 +24,8 @@ p {
 }
 a {
     font-family: 'Roboto Condensed', sans-serif;
-    color: #FF1100;
+    color: #001EFF;
+    text-decoration: wavy;
     line-height: 1.85em;
     font-weight: bold;;
 }
