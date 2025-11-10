@@ -31,7 +31,7 @@ main{
 }
 aside.left{
     grid-area: left;
-    background: green;
+    background: lightseagreen;
     padding: 1rem;
 }
 aside.right{
