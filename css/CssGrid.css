@@ -1,0 +1,114 @@
+.container{
+    display: grid;
+    grid-template-areas: "header header header"
+                        "nav nav nav" "left main right" "footer footer footer";
+                        grid-template-columns: 250px 1fr 250px;
+                        grid-template-rows: auto auto 1fr 60px;
+                        gap: 1rem;
+
+
+    max-width: 1400px;
+    margin: 0 auto;
+    background: aquamarine;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+header{
+    grid-area: header;
+    background: blueviolet;
+    padding: 1rem;
+    text-align: center;
+}
+nav{
+    grid-area: nav;
+    background: purple;
+    padding: 1rem;
+}
+main{
+    grid-area: main;
+    background: lightblue;
+    padding: 1rem;
+}
+aside.left{
+    grid-area: left;
+    background: green;
+    padding: 1rem;
+}
+aside.right{
+    grid-area: right;
+    background: lightseagreen;
+    padding: 1rem;
+}
+footer{
+    grid-area: footer;
+    background: red;
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 0rem;
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    /*flex-direction: ;*/
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #4b0082;
+}
+nav li{
+    margin: 0 1em;
+}
+nav a{
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bolder;
+}
+@media(max-width:1100px)/* 900x for tablets?*/
+{
+    .container{
+        grid-template-columns: minmax(180px,20%) 1fr minmax(180px,20%);
+    }
+}
+@media (max-width: 767px)
+{
+    .container{
+        grid-template-areas: "header"
+                              "nav"
+                              "main"
+                              "left"
+                              "right"
+                              "footer";
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr 1fr 1fr auto;
+        align-items: stretch;
+    }
+    main,aside.left,aside.right,footer{
+        order: 0;
+        flex: 0 0 auto;
+    }
+    nav{
+        order: 999;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: blue;
+        padding: 0.5rem 0;
+        z-index: 999;
+    }
+    nav a{
+        
+        background: blue;
+        border-radius: 10px;
+        margin: 5px;
+    }
+       
+
+    
+}
