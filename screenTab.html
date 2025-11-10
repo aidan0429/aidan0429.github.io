@@ -120,7 +120,7 @@
         margin: 1rem auto;
         border-collapse: collapse;
         text-align: center;
-        background-color: #FF0001;
+        background-color: #ff0000;
     }
     th,td{
         border:1px solid #000000;
@@ -193,6 +193,7 @@
         <a href="#content" class="skip-link">Skip to main content</a>
         <h1>Miata Owners Page!</h1>
         <nav aria-label="Main navigation">
+            <h2 class="sr-only">Main navigation</h2>
             <ul>
                 <li><a href="#About Miata's">About</a></li>
                 <li><a href="#Types of Miata's">Models</a></li>
@@ -204,7 +205,7 @@
         
     </header>
     <main id="content">
-        <article>
+        <article aria-label="Miata Information and History"></article>
             <section id="About Miata's">
                 <h2>Miata's</h2>
                 <p>
@@ -305,17 +306,17 @@ The ND generation introduced a Retractable Fastback (RF) variant that features a
                 <h2>Miata spotting submission</h2>
                 <form aria-labelledby="form-header">
                     <fieldset>
-                        <legend id="form-header">Submit your Miata spottings!</legend>
+                        <legend>Submit your Miata spottings!</legend>
                         <label for="person">Your name:</label>
-                        <input type="text" id="person" name="person" required>
+                        <input type="text" id="person" name="person" required autocomplete="name">
                         <label for="type">Miata generation:</label>
-                        <input type="text" id="type" name="generation" required>
+                        <input type="text" id="type" name="generation" required >
                         <label for="location">Location spotted:</label>
-                        <input type="text" id="locatoin" name="location" required>
+                        <input type="text" id="location" name="location" required autocomplete="address-level2">
                         <label for="email">Your email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required autocomplete="email">
                         <label for="photo">Miata photo:</label>
-                        <input type="file" id="photo"accept="image/*">
+                        <input type="file" id="photo"name ="photo"accept="image/*">
 
                         <button type="submit">Submit form!</button>
                     </fieldset>
