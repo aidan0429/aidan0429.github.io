@@ -50,24 +50,24 @@ nav{
 }
 main{
     grid-area: main;
-    background: lightblue;
+    background: #0C5551;
     padding: 1rem;
     font-size: large;
 }
 aside.left{
     grid-area: left;
-    background: lightseagreen;
+    background: #0C5551;
     padding: 1rem;
     
     a{
-        color: yellow;
+        color: white;
     }
     
     
 }
 aside.right{
     grid-area: right;
-    background: lightseagreen;
+    background: #0C5551;
     padding: 1rem;
 }
 footer{
