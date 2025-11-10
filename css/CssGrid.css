@@ -24,6 +24,19 @@
   white-space: nowrap;
   border: 0;
 }
+ .skip-link {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        Background: #0B1E33;
+        color: #fff;
+        padding: 10px;
+        z-index: 100;
+    }
+    .skip-link:focus{
+       top: 10px;
+       
+    }
 header{
     grid-area: header;
     background: blueviolet;
@@ -39,6 +52,7 @@ main{
     grid-area: main;
     background: lightblue;
     padding: 1rem;
+    font-size: large;
 }
 aside.left{
     grid-area: left;
@@ -52,8 +66,8 @@ aside.right{
 }
 footer{
     grid-area: footer;
-    background: red;
-    color: white;
+    background: lightblue;
+    color: #000000;
     font-size: 24px;
     font-weight: bolder;
     padding: 0rem;
