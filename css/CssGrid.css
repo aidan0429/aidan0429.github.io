@@ -58,7 +58,7 @@ aside.left{
     grid-area: left;
     background: #0C5551;
     padding: 1rem;
-    
+    color: white;
     a{
         color: white;
     }
@@ -69,6 +69,7 @@ aside.right{
     grid-area: right;
     background: #0C5551;
     padding: 1rem;
+    color: white;
 }
 footer{
     grid-area: footer;
