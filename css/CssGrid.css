@@ -50,7 +50,7 @@ nav{
 }
 main{
     grid-area: main;
-    background: #0C5551;
+    background: lightblue;
     padding: 1rem;
     font-size: large;
 }
