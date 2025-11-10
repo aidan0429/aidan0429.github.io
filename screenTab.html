@@ -25,6 +25,17 @@
             align-items: center;
         }
     body
+    .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
     .skip-link {
         position: absolute;
         top: -100px;
@@ -64,9 +75,9 @@
         display: inline-block;
         justify-content: center;
         flex-wrap: wrap;
-        background-color: #003366;
+        background-color: #8EFF80;
         padding: 0.75rem 1rem;
-        border-radius: 105x;
+        border-radius: 15px;
         z-index: 100;
     }
     nav a{
@@ -120,7 +131,7 @@
         margin: 1rem auto;
         border-collapse: collapse;
         text-align: center;
-        background-color: #ff0000;
+        background-color: #FBFF00;
     }
     th,td{
         border:1px solid #000000;
@@ -306,7 +317,7 @@ The ND generation introduced a Retractable Fastback (RF) variant that features a
                 <h2>Miata spotting submission</h2>
                 <form aria-labelledby="form-header">
                     <fieldset>
-                        <legend>Submit your Miata spottings!</legend>
+                        <legend id="form-header">Submit your Miata spottings!</legend>
                         <label for="person">Your name:</label>
                         <input type="text" id="person" name="person" required autocomplete="name">
                         <label for="type">Miata generation:</label>
@@ -316,7 +327,7 @@ The ND generation introduced a Retractable Fastback (RF) variant that features a
                         <label for="email">Your email:</label>
                         <input type="email" id="email" name="email" required autocomplete="email">
                         <label for="photo">Miata photo:</label>
-                        <input type="file" id="photo"name ="photo"accept="image/*">
+                        <input type="file" id="photo"name ="photo"accept="image/*"aria-label="Upload a photo of a Miata">
 
                         <button type="submit">Submit form!</button>
                     </fieldset>
