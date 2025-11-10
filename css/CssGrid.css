@@ -39,7 +39,7 @@
     }
 header{
     grid-area: header;
-    background: blueviolet;
+    background: #6E1ABC;
     color: white;
     padding: 1rem;
     text-align: center;
