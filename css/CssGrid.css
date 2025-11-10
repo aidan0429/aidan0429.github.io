@@ -59,6 +59,7 @@ aside.left{
     background: lightseagreen;
     padding: 1rem;
     color: yellow;
+    
 }
 aside.right{
     grid-area: right;
