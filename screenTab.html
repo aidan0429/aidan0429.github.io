@@ -4,39 +4,204 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <Title>Miata owners webpage</Title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <style>
-    body
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Bebas+Neue&display=swap');
+ body
         {
             font-family: 'Roboto', sans-serif;
-            background-color: #9EFEA9;
-            color: #000000;
-            line-height: 1.6;
+            Background-color: #dfeff1;
+            text-align: center;
+            Color: #0B1E33;
+            line-height: 1.7;
             margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     body
     .skip-link {
-        position: absolute; 
+        position: absolute;
         top: -100px;
         left: 0;
-        background: #000000;
+        Background: #0B1E33;
         color: #fff;
         padding: 10px;
         z-index: 100;
     }
+    .skip-link:focus{
+       top: 10px;
+       left: 10px;
+       background: #000000;
+       color:white;
+       font-weight: bold;
+       border-radius: 15px; 
+    }
+    header{
+        width:  50%;
+        text-align: center;
+        background-color: #9EFEA9;
+        color:white;
+        padding: 1.5rem 1rem;
+        margin: bottom 1rem;
+        border-radius: 15px;
+    }
+    header h1{
+        font-family: 'Momo Trust Display', sans-serif;
+        font-size: 2.5rem;
+        color: #000000;
+        margin-bottom: 1rem;
+        
+    }
+    nav{
+        position: sticky;
+        top: 0;
+        display: inline-block;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #003366;
+        padding: 0.75rem 1rem;
+        border-radius: 105x;
+        z-index: 100;
+    }
+    nav a{
+        color: white;
+        text-decoration: solid;
+        font-weight: 500;
+        padding:0;
+        margin:0;
+       
+    }
+    nav a:hover{
+        color:#f3ff0d;
+    }
+    main{
+        max-width: 900px;
+        width: 90%;
+        margin: 2rem auto;
+        flex-direction: column;
+        display:flex;
+        align-items: center;
+        text-align: left;
+        border-radius: 15px;
+    }
+    section{
+        width: 100%;
+        background:#9EFEA9;
+        margin-bottom: 2rem;
+        padding: 1rem 2rem;
+    border-radius: 15px;
+
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h2,h3{
+        font-family: 'Momo Trust Display', sans-serif;
+        text-align: center;
+        color:#000000;
+    }
+    p, label {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    }
+    img {
+        display: block;
+        margin: 1rem auto;
+        border-radius: 10px;
+    }
+    table{
+        width: 80%;
+        margin: 1rem auto;
+        border-collapse: collapse;
+        text-align: center;
+        background-color: #FF0001;
+    }
+    th,td{
+        border:1px solid #000000;
+        padding: 10px;
+    }
+    caption
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    fieldset
+    {
+        border: 2px solid #000000;
+        border-radius: 10px;
+        padding: 1.5rem;
+        width: 80%;
+        max-width: 450px;
+        background: #ffffff;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    label{
+        align-self: flex-start;
+        font-weight: bold;
+        color: #000000;
+        margin-left: 10%;
+    }
+    input{
+        width: 80%;
+        max-width: 400px;
+        padding: 10px;
+        border: 1px solid #777;
+        border-radius: 6px;
+        font-size: 1rem;
+    }
+    legend{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        color: #000000;
+        margin-bottom: 1rem;
+    }
+    figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem auto;
+    }
+    figure img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+
+    
 </style>
 </head>
 <body>
     <header role="banner">
-        <a href="#maincontent" class="skip-link">Skip to main content</a>
-        <h1>
-            "Miata Owners Page"
-            <nav aria-label="Page navigation"></nav>
-        </h1>
+        <a href="#content" class="skip-link">Skip to main content</a>
+        <h1>Miata Owners Page!</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#About Miata's">About</a></li>
+                <li><a href="#Types of Miata's">Models</a></li>
+                <li><a href="#table">Generation comparison</a></li>
+                <li><a href="#form">Spotting submission</a></li>
+            </ul>
+            
+        </nav>
+        
     </header>
     <main id="content">
         <article>
@@ -45,8 +210,11 @@
                 <p>
                     "The <bold>Mazda MX-5</bold> is a lightweight two-seat sports car manufactured and marketed by Mazda. In Japan, it is marketed as the Mazda Roadster[a] or, previously, as the Eunos Roadster.[b] In the United States it is sold as the Mazda Miata (/miˈɑːtə/), and it was formerly marketed under the same name in Canada. The name miata derives from Old High German for "reward"."
                 </p>
-                <img src="images/miata.jpeg"alt="miata" width = "200" height="200">
-                <figcaption>Miata parked on the street.</figcaption>
+                <figure>
+                    <img src="images/miata.jpeg"alt="miata" width = "200" height="200">
+                    <figcaption>Miata parked on the street.</figcaption>
+                </figure>
+                
             </section>
             <section id="Types of Miata's">
                 <h2>Years/Models of Miata's</h2>
