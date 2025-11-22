@@ -2,16 +2,59 @@
 <html lang ="en">
     <head>
         <meta charset="UTF-8">
-        <title>Assignment home page</title>
+        <title>Assignment landing page</title>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Faustina:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/CssGrid.css">
     </head>
     <body>
-        <h1>Choose an Assignment</h1>
+          <a class="skip-link" href="#main">Skip to main content</a>
+        <div class="container">
+            <header>
+                <h1>Aidan's Portfolio</h1>
+            </header>
+            <nav aria-label="Main navigation">
+                <h2 class="sr-only">Main navigation</h2>
+                <ul>
+                    <li><a href="HTMLsemantics.html">HTML Semantics project</a></li>
+                    <li><a href="Assignment-1.html">Assignment 1</a></li>
+                    <li><a href="screenTab.html">Tables, Forms, Tabbed Browsing, and Screen Reading</a></li>
+                    <li><a href="CssSematics.html">CSS Semantics project</a></li>
+                </ul>
+            </nav>
+            <main id="main">
+                <section aria-labelledby="about">
+                <h2 id="about">About Me!</h2>
+                <p>Hello, my name is Aidan O'Halloran and im currently a student at CU Boulder.
+                    I am from ouside of Philadelphia and I love to watch the eagles play.
+                    Currently I play alot of paintball and snowboard alot. Here is a picture of me playing paintball from a few years ago.
+                </p>
+                <p>
+                    I hope you enjoy all of my projects ive put alot of work into some of them.
+                    Thanks for reading about me!
+                </p>
+            </section>
+            </main>
+            <aside class="left">
+                <h2>Extra Links</h2>
+                <ul>
+                    <li><a href="https://github.com/aidan0429">Github</a></li>
+                    <li><a href="https://www.linkedin.com/">Linkedin</a></li>
+                    <li><a href="https://wave.webaim.org/">wave</a>
+                </ul>
+            </aside>
+            <aside class="right">
+                <h2>picture of me!</h2>
+                                <img src="images/paintball.jpg" alt="Picture of me playing paintball" width="150" height="150">
+            </aside>
+            <footer>
+                <h2>Designed by Aidan O'Halloran</h2>
+            </footer>
+        </div>
+        
 
-        <ul>
-            <li><a href="HTMLsemantics.html">HTML Semantics project</a></li>
-            <li><a href="Assignment-1.html">Assignment 1</a></li>
-            <li><a href="screenTab.html">Tables, Forms, Tabbed Browsing, and Screen Reading</a></li>
-        </ul>
+        
     </body>
 </html>
 
