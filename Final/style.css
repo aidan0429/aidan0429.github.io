@@ -148,6 +148,7 @@ footer{
     padding-left: 2rem
 
 }
+
 .text-side{
     width: 75%;
     margin-right:4rem;
@@ -163,6 +164,7 @@ footer{
     max-width: 260px;
     padding: 4 1rem;
 }
+
 @media (max-width: 600px) {
 
   .text-image-block {
