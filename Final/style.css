@@ -163,3 +163,25 @@ footer{
     max-width: 260px;
     padding: 4 1rem;
 }
+@media (max-width: 600px) {
+
+  .text-image-block {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .text-side, .image-side {
+      width: 100%;
+      margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    margin: 120px auto 1rem auto;
+    padding: 1rem;
+  }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
