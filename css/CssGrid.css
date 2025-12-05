@@ -81,6 +81,7 @@ footer{
     font-weight: bolder;
     padding: 0rem;
     text-align: center;
+    margin: 0rem;
 }
 nav ul{
     display: flex;
