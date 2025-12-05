@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>What is Universal Design?</title>
+        <title>How can Universal Design be implemented?</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -10,55 +10,145 @@
         <a class="skip-link" href="#main">Skip to main content</a>
         
         <header>
-            <h1>What is universal Design?</h1>
+            <h1>Implementation of Universal Design</h1>
         </header>
 
-            <nav aria-label="Main navigation">
-                <ul>
-                    <li><a href="landing.html">Home</a></li>
-                    <li><a href="What.html" aria-current="page">What</a></li>
-                    <li><a href="Why.html">Why</a></li>
-                    <li><a href="How.html">How</a></li>
-                </ul>
-            </nav>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="What.html">What</a></li>
+                <li><a href="Why.html">Why</a></li>
+                <li><a href="How.html" aria-current="page">How</a></li>
+            </ul>
+        </nav>
 
-            <main id="main">
-                <h2>Explaining Universal Design.</h2>
-                <h3>What is it?</h3>
-                    <p>Universal design is: </p>
-                    <ul>
-                        <li>
-                            <p>Principles of universal design</p>
-                        </li>
-  
-                    </ul>
-                <h3>Diversity of Users</h3>
+        <main id="main">
+
+            <h1>How Universal Design is implemented</h1>
+
+            <section class="content">
+                <h3>How Screen Readers Interpret Websites</h3>
+                <p>
+                    Screen readers are programs which read the underlying code/structure of a
+                    website and convert it into text which is read aloud to the user.
+                    They do not interpret the visual layout of a webpage like someone with sight would.
+                </p>
                 <ul>
-                        <li>
-                            <p>=Different types of disabilties</p>
-                            <p>Visual Impairment</p>
-                            <p>Audio Impairment</p>
-                        </li>
-                        <li>
-                            <p>Device differences</p>
-                            <p>screen size differences</p>
-                        </li>
+                    <li>They identify headings (H1, H2, H3) to identify the structure and navigate the page.</li>
+                    <li>They interpret semantic HTML and CSS, not the visual layout.</li>
+                    <li>They use landmarks such as header, nav, and main.</li>
+                    <li>They describe meaningful alt text for images and links.</li>
                 </ul>
-                <h3>7 Key principles of Universal Design</h3>
-                <ol>
-                    <li>asdad</li>
-                    <li>asdasdada</li>
-                    <li>asdasdadasds</li>
-                    <li>asdasdasdasdas</li>
-                    <li>asdasdasdaddasdasdas</li>
-                    <li>asdasdasdasdasdasdasd</li>
-                    <li>asdasdasdasdasdasdasdaasd</li>
-                </ol>
-                <h3>Types of barriers online</h3>
-                <p>There are many types of barriers that users may face online, like, </p>
-            </main>
-            <footer>
-                <p>Current Page: How</p>
-            </footer>
+                <
+            </section>
+
+
+            <div class="text-image-block">
+                <div class="text-side">
+                    <h3>Semantic HTML Structure</h3>
+                    <ul>
+                        <li><strong>Proper headings:</strong> Only one H1. Others follow hierarchy.</li>
+                        <li><strong>Landmarks:</strong> &lt;main&gt;, &lt;header&gt;, &lt;nav&gt;, &lt;footer&gt;</li>
+                        <li><strong>Meaningful alt text:</strong> describes the content purposefully.</li>
+                    </ul>
+                </div>
+                <div class="image-side">
+                    <img src="../images/semantic.png" alt="Semantic HTML layout example">
+                </div>
+            </div>
+
+
+            <section class="content">
+                <h3>Specific Barriers to Avoid</h3>
+
+                <div class="text-image-block">
+                    <div class="text-side">
+                        <ul>
+                            <li>Improper or low color contrast</li>
+                            <p>This makes it hard for users with visual impairments to read the content.</p>
+                            <li>Font size too small or poorly spaced</li>
+                            <p>This also makes it hard for users with visual impairments to read the content.</p>
+                            <li>Overlapping elements or messy layout</li>
+                            <p>This can confuse users and make navigation difficult.</p>
+                            <li>Not tested with accessibility checkers</li>
+                            <p>This can lead to unknown accessibility issues.</p>
+                            <li>Images missing alt text</li>
+                            <p>This makes it impossible for users with screenreaders to understand images.</p>
+                            <li>Unlabeled buttons or links</li>
+                            <p>This makes it difficult for users with screenreaders for navigate the page.</p>
+                        </ul>
+                    </div>
+                    <div class="image-side">
+                        <img src="../images/barrier.jpg" alt="Barriers online graphic">
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="content">
+                <h3>Accessibility Testing Tools</h3>
+                <ul>
+                    <li><strong>Silktide</strong>Automated accessibility scanner</li>
+                    <li><strong>WAVE Tool</strong> Finds contrast issues, missing alt text, structure</li>
+                    <li><strong>Keyboard testing</strong> Navigating with only TAB and ENTER</li>
+                </ul>
+            </section>
+
+
+            <section class="content">
+                <h3>Mobile Content First</h3>
+
+                <div class="text-image-block">
+                    <div class="text-side">
+                        <p>
+                            When designing for mobile first, we ensure that the content is accessible for all users.
+                        </p>
+                        <ul>
+                            <li>No overlapping or zooming issues</li>
+                            <li>Clean and readable hierarchy</li>
+                            <li>Text remains readable on small devices</li>
+                        </ul>
+                    </div>
+                    <div class="image-side">
+                        <img src="../images/devices.jpg" alt="Different devices image">
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="content">
+                <h3>Keyboard Accessibility</h3>
+
+                <div class="text-image-block">
+                    <div class="text-side">
+                        <ul>
+                            <li><strong>Skip to content</strong> button at the top</li>
+                            <li>All links reachable using the TAB key</li>
+                            <li>No mouse required to use the webpage</li>
+                            <li>Logical focus order</li>
+                        </ul>
+                    </div>
+                    <div class="image-side">
+                        <img src="../images/keyboard.png" alt="Keyboard access image">
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="content">
+                <h2>Conclusion</h2>
+                <p>
+                    Universal Design requires thoughtful planning and testing. 
+                    From semantic HTML to keyboard functionality and mobile-first layout, 
+                    designing accessibly creates a better experience for everyone.
+                </p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Current Page: How</p>
+        </footer>
+
     </body>
 </html>
